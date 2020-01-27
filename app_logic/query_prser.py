@@ -16,7 +16,6 @@ class QueryParser:
             object_to_return = {
                 'command': key
             }
-            print(object_to_return)
             parsed = parsed[0]
             for index in range(len(parsed)):
                 object_to_return[value['order'][index]] = parsed[index]

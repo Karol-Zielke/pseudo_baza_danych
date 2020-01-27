@@ -16,7 +16,7 @@ class MainLogic:
                 continue
             qp = QueryParser()
             parsed_obj = qp.parse(query)
-            print(parsed_obj['command'])
+            print(parsed_obj)
             if parsed_obj['command'] == 'create':
                 cl = CreateLogic()
                 cl.create(parsed_obj)
