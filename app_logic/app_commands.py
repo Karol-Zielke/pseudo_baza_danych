@@ -1,7 +1,7 @@
 COMMANDS = {
     'create': {
-        'regex': 'CREATE DOCUMENTS (.*) \((.*)\)',
-        'order': ['documents', 'columns'],
+        'regex': 'CREATE DOCUMENT (.*) \((.*)\)',
+        'order': ['document', 'columns'],
     },
     'add': {
         'regex': 'ADD \((.*)\) TO (.*)',

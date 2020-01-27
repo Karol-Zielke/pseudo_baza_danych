@@ -12,9 +12,11 @@ class QueryParser:
             parsed = re.findall(value['regex'], query)
             if len(parsed) == 0:
                 continue
+
             object_to_return = {
-                'command': key,
+                'command': key
             }
+            print(object_to_return)
             parsed = parsed[0]
             for index in range(len(parsed)):
                 object_to_return[value['order'][index]] = parsed[index]
